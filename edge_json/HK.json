@@ -16,7 +16,7 @@
     ],
     [
         "Kowloon",
-        "Hong Kong",
+        "Hong Kong/Central",
         "Airport Express"
     ],
     [
@@ -111,11 +111,11 @@
     ],
     [
         "Sheung Wan",
-        "Central",
+        "Hong Kong/Central",
         "Island Line"
     ],
     [
-        "Central",
+        "Hong Kong/Central",
         "Admiralty",
         "Island Line"
     ],
@@ -275,7 +275,7 @@
         "South Island Line"
     ],
     [
-        "Hong Kong",
+        "Hong Kong/Central",
         "Kowloon",
         "Tung Chung Line"
     ],
@@ -421,11 +421,11 @@
     ],
     [
         "Hung Hom",
-        "East Tsim Sha Tsui",
+        "E/Tsim Sha Tsui",
         "Tuen Ma Line"
     ],
     [
-        "East Tsim Sha Tsui",
+        "E/Tsim Sha Tsui",
         "Austin",
         "Tuen Ma Line"
     ],
@@ -536,17 +536,17 @@
     ],
     [
         "Jordan",
-        "Tsim Sha Tsui",
+        "E/Tsim Sha Tsui",
         "Tsuen Wan Line"
     ],
     [
-        "Tsim Sha Tsui",
+        "E/Tsim Sha Tsui",
         "Admiralty",
         "Tsuen Wan Line"
     ],
     [
         "Admiralty",
-        "Central",
+        "Hong Kong/Central",
         "Tsuen Wan Line"
     ]
 ]

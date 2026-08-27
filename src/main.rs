@@ -1,41 +1,41 @@
-use serde_json::{from_str, to_writer};
+use serde_json::from_str;
 use std::collections::{HashMap, HashSet, VecDeque};
-use std::fs::File;
-use std::io::BufWriter;
-use std::{fs, println};
+use std::fs;
+mod decision_tree;
+use decision_tree::{DecisionTree, OneToManyMap, Station};
 
-fn get_dist_matrix<'a>(
-    neighbour_map: &HashMap<&'a String, Vec<&'a String>>,
-    stations: &Vec<&'a String>,
-) -> HashMap<&'a String, HashMap<&'a String, u32>> {
+fn get_dist_matrix(
+    neighbour_map: &OneToManyMap,
+    stations: &HashSet<String>,
+) -> HashMap<String, HashMap<String, u32>> {
     // 1. Change to `let mut` so we can update values during BFS
-    let mut dist_matrix: HashMap<&'a String, HashMap<&'a String, u32>> = stations
+    let mut dist_matrix: HashMap<String, HashMap<String, u32>> = stations
         .iter()
-        .map(|&s1| {
-            let inner_map: HashMap<&'a String, u32> = stations
+        .map(|s1| {
+            let inner_map: HashMap<String, u32> = stations
                 .iter()
-                .map(|&s2| (s2, if s1 == s2 { 0 } else { u32::MAX }))
+                .map(|s2| (s2.clone(), if s1 == s2 { 0 } else { u32::MAX }))
                 .collect();
 
-            (s1, inner_map)
+            (s1.clone(), inner_map)
         })
         .collect();
 
-    for &start_station in stations {
-        let mut bfs: VecDeque<(&'a String, u32)> = VecDeque::new();
-        let mut seen: HashSet<&'a String> = HashSet::new();
+    for start_station in stations {
+        let mut bfs: VecDeque<(&String, u32)> = VecDeque::new();
+        let mut seen: HashSet<&String> = HashSet::new();
 
         // Initialize BFS
-        bfs.push_back((start_station, 0));
-        seen.insert(start_station);
+        bfs.push_back((&start_station, 0));
+        seen.insert(&start_station);
 
         while let Some((current_station, current_dist)) = bfs.pop_front() {
             if let Some(inner_map) = dist_matrix.get_mut(start_station) {
-                inner_map.insert(current_station, current_dist);
+                inner_map.insert(current_station.clone(), current_dist);
             }
 
             if let Some(neighbours) = neighbour_map.get(current_station) {
-                for &neighbour in neighbours {
+                for neighbour in neighbours {
                     if seen.contains(neighbour) {
                         continue;
                     }
@@ -49,35 +49,6 @@ fn get_dist_matrix<'a>(
     dist_matrix
 }
 
-fn cat_entropy_calc(
-    trgt_station_dist_matrix: &HashMap<&String, u32>,
-    stations_set: &HashSet<&String>,
-    num_stations: f32,
-) -> f32 {
-    let mut entropy = 0f32;
-    let mut freq_map: HashMap<u32, u32> = HashMap::new();
-
-    for &station in stations_set {
-        *(freq_map
-            .entry(*trgt_station_dist_matrix.get(station).unwrap())
-            .or_insert(0)) += 1;
-    }
-
-    for &value in freq_map.values() {
-        if value == 1u32 {
-            continue;
-        }
-
-        let value_f32 = value as f32;
-
-        entropy += (value_f32 / num_stations)
-            * ((value_f32.ln() / value_f32)
-                + ((value_f32 - 1f32) / value_f32) * (value_f32 / (value_f32 - 1f32)).ln());
-    }
-
-    entropy
-}
-
 fn main() {
     let Ok(data) = fs::read_to_string("./edge_json/HK.json") else {
         return;
@@ -87,9 +58,9 @@ fn main() {
         return;
     };
 
-    let mut line_to_station: HashMap<&String, HashSet<&String>> = HashMap::new();
-    let mut station_to_line: HashMap<&String, Vec<&String>> = HashMap::new();
-    let mut neighbour_map: HashMap<&String, Vec<&String>> = HashMap::new();
+    let mut line_to_stations: HashMap<String, HashSet<String>> = HashMap::new();
+    let mut station_to_lines: OneToManyMap = OneToManyMap::new();
+    let mut neighbour_map: OneToManyMap = OneToManyMap::new();
 
     for data_tuple in &parsed_json {
         let Some(line_name) = data_tuple.get(2) else {
@@ -97,57 +68,55 @@ fn main() {
             continue;
         };
 
-        line_to_station
-            .entry(line_name)
+        line_to_stations
+            .entry(line_name.clone())
             .or_default()
-            .extend(data_tuple.get(0..2).unwrap().iter());
+            .extend(data_tuple.get(0..2).unwrap().iter().cloned());
 
         let (Some(station1), Some(station2)) = (data_tuple.get(0), data_tuple.get(1)) else {
             continue;
         };
 
-        station_to_line.entry(station1).or_default().push(line_name);
-        station_to_line.entry(station2).or_default().push(line_name);
+        station_to_lines
+            .entry(station1.clone())
+            .or_default()
+            .push(line_name.clone());
+        station_to_lines
+            .entry(station2.clone())
+            .or_default()
+            .push(line_name.clone());
 
-        neighbour_map.entry(station1).or_default().push(station2);
-        neighbour_map.entry(station2).or_default().push(station1);
+        neighbour_map
+            .entry(station1.clone())
+            .or_default()
+            .push(station2.clone());
+        neighbour_map
+            .entry(station2.clone())
+            .or_default()
+            .push(station1.clone());
     }
 
-    let stations: Vec<&String> = station_to_line.keys().map(|f| *f).collect();
+    let stations: HashSet<String> = station_to_lines.keys().cloned().collect();
     let dist_matrix = get_dist_matrix(&neighbour_map, &stations);
 
-    let mut station_to_entropy: HashMap<&String, f32> = HashMap::new();
-
-    for &station in &stations {
-        let Some(cur_lines) = station_to_line.get(station) else {
-            continue;
-        };
-        let cur_lines_stations: HashSet<&String> = cur_lines
+    let mut station_list: Vec<Station> = Vec::new();
+    for station in &stations {
+        let cur_line_stations: HashSet<String> = station_to_lines
+            .get(station)
+            .unwrap()
             .iter()
-            .flat_map(|&line| line_to_station.get(line))
+            .flat_map(|line| line_to_stations.get(line))
             .flatten()
-            .copied()
+            .cloned()
             .collect();
 
-        let other_lines =
-            (&stations.iter().copied().collect::<HashSet<&String>>()) - (&cur_lines_stations);
-
-        let trgt_station_dist_matrix = &dist_matrix.get(station).unwrap();
-
-        let entropy: f32 = cat_entropy_calc(
-            trgt_station_dist_matrix,
-            &cur_lines_stations,
-            station.len() as f32,
-        ) + cat_entropy_calc(
-            trgt_station_dist_matrix,
-            &other_lines,
-            stations.len() as f32,
-        );
-
-        station_to_entropy.entry(station).insert_entry(entropy);
+        station_list.push(Station {
+            name: station.clone(),
+            dist_to_stations: dist_matrix.get(station).unwrap().clone(),
+            cur_line_stations: cur_line_stations.clone(),
+            other_line_stations: (&stations) - (&cur_line_stations),
+        });
     }
-
-    let file = File::create("./response/HK_entropy.json").unwrap();
-    let writer = BufWriter::new(file);
-    let _ = to_writer(writer, &station_to_entropy);
+    let tree = DecisionTree::new(station_list, &stations);
+    tree.print();
 }

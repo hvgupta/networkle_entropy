@@ -50,7 +50,7 @@ fn get_dist_matrix(
 }
 
 fn main() {
-    let Ok(data) = fs::read_to_string("./edge_json/HK.json") else {
+    let Ok(data) = fs::read_to_string("./edge_json/LD.json") else {
         return;
     };
 

@@ -1,0 +1,2602 @@
+[
+  [
+    "Baker Street",
+    "Regent's Park",
+    "Bakerloo Line"
+  ],
+  [
+    "Regent's Park",
+    "Oxford Circus",
+    "Bakerloo Line"
+  ],
+  [
+    "Oxford Circus",
+    "Piccadilly Circus",
+    "Bakerloo Line"
+  ],
+  [
+    "Piccadilly Circus",
+    "Charing Cross",
+    "Bakerloo Line"
+  ],
+  [
+    "Charing Cross",
+    "Embankment",
+    "Bakerloo Line"
+  ],
+  [
+    "Embankment",
+    "Waterloo",
+    "Bakerloo Line"
+  ],
+  [
+    "Waterloo",
+    "Lambeth North",
+    "Bakerloo Line"
+  ],
+  [
+    "Lambeth North",
+    "Elephant & Castle",
+    "Bakerloo Line"
+  ],
+  [
+    "Harrow & Wealdstone",
+    "Kenton",
+    "Bakerloo Line"
+  ],
+  [
+    "Kenton",
+    "South Kenton",
+    "Bakerloo Line"
+  ],
+  [
+    "South Kenton",
+    "North Wembley",
+    "Bakerloo Line"
+  ],
+  [
+    "North Wembley",
+    "Wembley Central",
+    "Bakerloo Line"
+  ],
+  [
+    "Wembley Central",
+    "Stonebridge Park",
+    "Bakerloo Line"
+  ],
+  [
+    "Stonebridge Park",
+    "Harlesden",
+    "Bakerloo Line"
+  ],
+  [
+    "Harlesden",
+    "Willesden Junction",
+    "Bakerloo Line"
+  ],
+  [
+    "Willesden Junction",
+    "Kensal Green",
+    "Bakerloo Line"
+  ],
+  [
+    "Kensal Green",
+    "Queen's Park",
+    "Bakerloo Line"
+  ],
+  [
+    "Queen's Park",
+    "Kilburn Park",
+    "Bakerloo Line"
+  ],
+  [
+    "Kilburn Park",
+    "Maida Vale",
+    "Bakerloo Line"
+  ],
+  [
+    "Maida Vale",
+    "Warwick Avenue",
+    "Bakerloo Line"
+  ],
+  [
+    "Warwick Avenue",
+    "Paddington",
+    "Bakerloo Line"
+  ],
+  [
+    "Paddington",
+    "Edgware Road",
+    "Bakerloo Line"
+  ],
+  [
+    "Edgware Road",
+    "Marylebone",
+    "Bakerloo Line"
+  ],
+  [
+    "Marylebone",
+    "Baker Street",
+    "Bakerloo Line"
+  ],
+  [
+    "West Ruislip",
+    "Ruislip Gardens",
+    "Central Line"
+  ],
+  [
+    "Ruislip Gardens",
+    "South Ruislip",
+    "Central Line"
+  ],
+  [
+    "South Ruislip",
+    "Northolt",
+    "Central Line"
+  ],
+  [
+    "Northolt",
+    "Greenford",
+    "Central Line"
+  ],
+  [
+    "Greenford",
+    "Perivale",
+    "Central Line"
+  ],
+  [
+    "Perivale",
+    "Hanger Lane",
+    "Central Line"
+  ],
+  [
+    "Hanger Lane",
+    "North Acton",
+    "Central Line"
+  ],
+  [
+    "Ealing Broadway",
+    "West Acton",
+    "Central Line"
+  ],
+  [
+    "West Acton",
+    "North Acton",
+    "Central Line"
+  ],
+  [
+    "North Acton",
+    "East Acton",
+    "Central Line"
+  ],
+  [
+    "East Acton",
+    "White City",
+    "Central Line"
+  ],
+  [
+    "White City",
+    "Shepherd's Bush",
+    "Central Line"
+  ],
+  [
+    "Shepherd's Bush",
+    "Holland Park",
+    "Central Line"
+  ],
+  [
+    "Holland Park",
+    "Notting Hill Gate",
+    "Central Line"
+  ],
+  [
+    "Notting Hill Gate",
+    "Queensway",
+    "Central Line"
+  ],
+  [
+    "Queensway",
+    "Lancaster Gate",
+    "Central Line"
+  ],
+  [
+    "Lancaster Gate",
+    "Marble Arch",
+    "Central Line"
+  ],
+  [
+    "Marble Arch",
+    "Bond Street",
+    "Central Line"
+  ],
+  [
+    "Bond Street",
+    "Oxford Circus",
+    "Central Line"
+  ],
+  [
+    "Oxford Circus",
+    "Tottenham Court Road",
+    "Central Line"
+  ],
+  [
+    "Tottenham Court Road",
+    "Holborn",
+    "Central Line"
+  ],
+  [
+    "Holborn",
+    "Chancery Lane",
+    "Central Line"
+  ],
+  [
+    "Chancery Lane",
+    "St. Paul's",
+    "Central Line"
+  ],
+  [
+    "St. Paul's",
+    "Bank",
+    "Central Line"
+  ],
+  [
+    "Bank",
+    "Liverpool Street",
+    "Central Line"
+  ],
+  [
+    "Liverpool Street",
+    "Bethnal Green",
+    "Central Line"
+  ],
+  [
+    "Bethnal Green",
+    "Mile End",
+    "Central Line"
+  ],
+  [
+    "Mile End",
+    "Stratford",
+    "Central Line"
+  ],
+  [
+    "Stratford",
+    "Leyton",
+    "Central Line"
+  ],
+  [
+    "Leyton",
+    "Leytonstone",
+    "Central Line"
+  ],
+  [
+    "Leytonstone",
+    "Snaresbrook",
+    "Central Line"
+  ],
+  [
+    "Snaresbrook",
+    "South Woodford",
+    "Central Line"
+  ],
+  [
+    "South Woodford",
+    "Woodford",
+    "Central Line"
+  ],
+  [
+    "Woodford",
+    "Buckhurst Hill",
+    "Central Line"
+  ],
+  [
+    "Buckhurst Hill",
+    "Loughton",
+    "Central Line"
+  ],
+  [
+    "Loughton",
+    "Debden",
+    "Central Line"
+  ],
+  [
+    "Debden",
+    "Theydon Bois",
+    "Central Line"
+  ],
+  [
+    "Theydon Bois",
+    "Epping",
+    "Central Line"
+  ],
+  [
+    "Leytonstone",
+    "Wanstead",
+    "Central Line"
+  ],
+  [
+    "Wanstead",
+    "Redbridge",
+    "Central Line"
+  ],
+  [
+    "Redbridge",
+    "Gants Hill",
+    "Central Line"
+  ],
+  [
+    "Gants Hill",
+    "Newbury Park",
+    "Central Line"
+  ],
+  [
+    "Newbury Park",
+    "Barkingside",
+    "Central Line"
+  ],
+  [
+    "Barkingside",
+    "Fairlop",
+    "Central Line"
+  ],
+  [
+    "Fairlop",
+    "Hainault",
+    "Central Line"
+  ],
+  [
+    "Hainault",
+    "Grange Hill",
+    "Central Line"
+  ],
+  [
+    "Grange Hill",
+    "Chigwell",
+    "Central Line"
+  ],
+  [
+    "Chigwell",
+    "Roding Valley",
+    "Central Line"
+  ],
+  [
+    "Roding Valley",
+    "Woodford",
+    "Central Line"
+  ],
+  [
+    "Hammersmith",
+    "Goldhawk Road",
+    "Circle Line"
+  ],
+  [
+    "Goldhawk Road",
+    "Shepherd's Bush Market",
+    "Circle Line"
+  ],
+  [
+    "Shepherd's Bush Market",
+    "Wood Lane",
+    "Circle Line"
+  ],
+  [
+    "Wood Lane",
+    "Latimer Road",
+    "Circle Line"
+  ],
+  [
+    "Latimer Road",
+    "Ladbroke Grove",
+    "Circle Line"
+  ],
+  [
+    "Ladbroke Grove",
+    "Westbourne Park",
+    "Circle Line"
+  ],
+  [
+    "Westbourne Park",
+    "Royal Oak",
+    "Circle Line"
+  ],
+  [
+    "Royal Oak",
+    "Paddington",
+    "Circle Line"
+  ],
+  [
+    "Paddington",
+    "Edgware Road",
+    "Circle Line"
+  ],
+  [
+    "Edgware Road",
+    "Baker Street",
+    "Circle Line"
+  ],
+  [
+    "Baker Street",
+    "Great Portland Street",
+    "Circle Line"
+  ],
+  [
+    "Great Portland Street",
+    "Euston Square",
+    "Circle Line"
+  ],
+  [
+    "Euston Square",
+    "King's Cross St. Pancras",
+    "Circle Line"
+  ],
+  [
+    "King's Cross St. Pancras",
+    "Farringdon",
+    "Circle Line"
+  ],
+  [
+    "Farringdon",
+    "Barbican",
+    "Circle Line"
+  ],
+  [
+    "Barbican",
+    "Moorgate",
+    "Circle Line"
+  ],
+  [
+    "Moorgate",
+    "Liverpool Street",
+    "Circle Line"
+  ],
+  [
+    "Liverpool Street",
+    "Aldgate",
+    "Circle Line"
+  ],
+  [
+    "Aldgate",
+    "Tower Hill",
+    "Circle Line"
+  ],
+  [
+    "Tower Hill",
+    "Monument",
+    "Circle Line"
+  ],
+  [
+    "Monument",
+    "Cannon Street",
+    "Circle Line"
+  ],
+  [
+    "Cannon Street",
+    "Mansion House",
+    "Circle Line"
+  ],
+  [
+    "Mansion House",
+    "Blackfriars",
+    "Circle Line"
+  ],
+  [
+    "Blackfriars",
+    "Temple",
+    "Circle Line"
+  ],
+  [
+    "Temple",
+    "Embankment",
+    "Circle Line"
+  ],
+  [
+    "Embankment",
+    "Westminster",
+    "Circle Line"
+  ],
+  [
+    "Westminster",
+    "St. James's Park",
+    "Circle Line"
+  ],
+  [
+    "St. James's Park",
+    "Victoria",
+    "Circle Line"
+  ],
+  [
+    "Victoria",
+    "Sloane Square",
+    "Circle Line"
+  ],
+  [
+    "Sloane Square",
+    "South Kensington",
+    "Circle Line"
+  ],
+  [
+    "South Kensington",
+    "Gloucester Road",
+    "Circle Line"
+  ],
+  [
+    "Gloucester Road",
+    "High Street Kensington",
+    "Circle Line"
+  ],
+  [
+    "High Street Kensington",
+    "Notting Hill Gate",
+    "Circle Line"
+  ],
+  [
+    "Notting Hill Gate",
+    "Bayswater",
+    "Circle Line"
+  ],
+  [
+    "Bayswater",
+    "Paddington",
+    "Circle Line"
+  ],
+  [
+    "Richmond",
+    "Kew Gardens",
+    "District Line"
+  ],
+  [
+    "Kew Gardens",
+    "Gunnersbury",
+    "District Line"
+  ],
+  [
+    "Gunnersbury",
+    "Turnham Green",
+    "District Line"
+  ],
+  [
+    "Ealing Broadway",
+    "Ealing Common",
+    "District Line"
+  ],
+  [
+    "Ealing Common",
+    "Acton Town",
+    "District Line"
+  ],
+  [
+    "Acton Town",
+    "Chiswick Park",
+    "District Line"
+  ],
+  [
+    "Chiswick Park",
+    "Turnham Green",
+    "District Line"
+  ],
+  [
+    "Turnham Green",
+    "Stamford Brook",
+    "District Line"
+  ],
+  [
+    "Stamford Brook",
+    "Ravenscourt Park",
+    "District Line"
+  ],
+  [
+    "Ravenscourt Park",
+    "Hammersmith",
+    "District Line"
+  ],
+  [
+    "Hammersmith",
+    "Barons Court",
+    "District Line"
+  ],
+  [
+    "Barons Court",
+    "West Kensington",
+    "District Line"
+  ],
+  [
+    "West Kensington",
+    "Earl's Court",
+    "District Line"
+  ],
+  [
+    "Wimbledon",
+    "Wimbledon Park",
+    "District Line"
+  ],
+  [
+    "Wimbledon Park",
+    "Southfields",
+    "District Line"
+  ],
+  [
+    "Southfields",
+    "East Putney",
+    "District Line"
+  ],
+  [
+    "East Putney",
+    "Putney Bridge",
+    "District Line"
+  ],
+  [
+    "Putney Bridge",
+    "Parsons Green",
+    "District Line"
+  ],
+  [
+    "Parsons Green",
+    "Fulham Broadway",
+    "District Line"
+  ],
+  [
+    "Fulham Broadway",
+    "West Brompton",
+    "District Line"
+  ],
+  [
+    "West Brompton",
+    "Earl's Court",
+    "District Line"
+  ],
+  [
+    "Kensington (Olympia)",
+    "Earl's Court",
+    "District Line"
+  ],
+  [
+    "Earl's Court",
+    "Gloucester Road",
+    "District Line"
+  ],
+  [
+    "Gloucester Road",
+    "South Kensington",
+    "District Line"
+  ],
+  [
+    "Earl's Court",
+    "High Street Kensington",
+    "District Line"
+  ],
+  [
+    "High Street Kensington",
+    "Notting Hill Gate",
+    "District Line"
+  ],
+  [
+    "Notting Hill Gate",
+    "Bayswater",
+    "District Line"
+  ],
+  [
+    "Bayswater",
+    "Paddington",
+    "District Line"
+  ],
+  [
+    "Paddington",
+    "Edgware Road",
+    "District Line"
+  ],
+  [
+    "South Kensington",
+    "Sloane Square",
+    "District Line"
+  ],
+  [
+    "Sloane Square",
+    "Victoria",
+    "District Line"
+  ],
+  [
+    "Victoria",
+    "St. James's Park",
+    "District Line"
+  ],
+  [
+    "St. James's Park",
+    "Westminster",
+    "District Line"
+  ],
+  [
+    "Westminster",
+    "Embankment",
+    "District Line"
+  ],
+  [
+    "Embankment",
+    "Temple",
+    "District Line"
+  ],
+  [
+    "Temple",
+    "Blackfriars",
+    "District Line"
+  ],
+  [
+    "Blackfriars",
+    "Mansion House",
+    "District Line"
+  ],
+  [
+    "Mansion House",
+    "Cannon Street",
+    "District Line"
+  ],
+  [
+    "Cannon Street",
+    "Monument",
+    "District Line"
+  ],
+  [
+    "Monument",
+    "Tower Hill",
+    "District Line"
+  ],
+  [
+    "Tower Hill",
+    "Aldgate East",
+    "District Line"
+  ],
+  [
+    "Aldgate East",
+    "Whitechapel",
+    "District Line"
+  ],
+  [
+    "Whitechapel",
+    "Stepney Green",
+    "District Line"
+  ],
+  [
+    "Stepney Green",
+    "Mile End",
+    "District Line"
+  ],
+  [
+    "Mile End",
+    "Bow Road",
+    "District Line"
+  ],
+  [
+    "Bow Road",
+    "Bromley-by-Bow",
+    "District Line"
+  ],
+  [
+    "Bromley-by-Bow",
+    "West Ham",
+    "District Line"
+  ],
+  [
+    "West Ham",
+    "Plaistow",
+    "District Line"
+  ],
+  [
+    "Plaistow",
+    "Upton Park",
+    "District Line"
+  ],
+  [
+    "Upton Park",
+    "East Ham",
+    "District Line"
+  ],
+  [
+    "East Ham",
+    "Barking",
+    "District Line"
+  ],
+  [
+    "Barking",
+    "Upney",
+    "District Line"
+  ],
+  [
+    "Upney",
+    "Becontree",
+    "District Line"
+  ],
+  [
+    "Becontree",
+    "Dagenham Heathway",
+    "District Line"
+  ],
+  [
+    "Dagenham Heathway",
+    "Dagenham East",
+    "District Line"
+  ],
+  [
+    "Dagenham East",
+    "Elm Park",
+    "District Line"
+  ],
+  [
+    "Elm Park",
+    "Hornchurch",
+    "District Line"
+  ],
+  [
+    "Hornchurch",
+    "Upminster Bridge",
+    "District Line"
+  ],
+  [
+    "Upminster Bridge",
+    "Upminster",
+    "District Line"
+  ],
+  [
+    "Hammersmith",
+    "Goldhawk Road",
+    "Hammersmith & City Line"
+  ],
+  [
+    "Goldhawk Road",
+    "Shepherd's Bush Market",
+    "Hammersmith & City Line"
+  ],
+  [
+    "Shepherd's Bush Market",
+    "Wood Lane",
+    "Hammersmith & City Line"
+  ],
+  [
+    "Wood Lane",
+    "Latimer Road",
+    "Hammersmith & City Line"
+  ],
+  [
+    "Latimer Road",
+    "Ladbroke Grove",
+    "Hammersmith & City Line"
+  ],
+  [
+    "Ladbroke Grove",
+    "Westbourne Park",
+    "Hammersmith & City Line"
+  ],
+  [
+    "Westbourne Park",
+    "Royal Oak",
+    "Hammersmith & City Line"
+  ],
+  [
+    "Royal Oak",
+    "Paddington",
+    "Hammersmith & City Line"
+  ],
+  [
+    "Paddington",
+    "Edgware Road",
+    "Hammersmith & City Line"
+  ],
+  [
+    "Edgware Road",
+    "Baker Street",
+    "Hammersmith & City Line"
+  ],
+  [
+    "Baker Street",
+    "Great Portland Street",
+    "Hammersmith & City Line"
+  ],
+  [
+    "Great Portland Street",
+    "Euston Square",
+    "Hammersmith & City Line"
+  ],
+  [
+    "Euston Square",
+    "King's Cross St. Pancras",
+    "Hammersmith & City Line"
+  ],
+  [
+    "King's Cross St. Pancras",
+    "Farringdon",
+    "Hammersmith & City Line"
+  ],
+  [
+    "Farringdon",
+    "Barbican",
+    "Hammersmith & City Line"
+  ],
+  [
+    "Barbican",
+    "Moorgate",
+    "Hammersmith & City Line"
+  ],
+  [
+    "Moorgate",
+    "Liverpool Street",
+    "Hammersmith & City Line"
+  ],
+  [
+    "Liverpool Street",
+    "Aldgate East",
+    "Hammersmith & City Line"
+  ],
+  [
+    "Aldgate East",
+    "Whitechapel",
+    "Hammersmith & City Line"
+  ],
+  [
+    "Whitechapel",
+    "Stepney Green",
+    "Hammersmith & City Line"
+  ],
+  [
+    "Stepney Green",
+    "Mile End",
+    "Hammersmith & City Line"
+  ],
+  [
+    "Mile End",
+    "Bow Road",
+    "Hammersmith & City Line"
+  ],
+  [
+    "Bow Road",
+    "Bromley-by-Bow",
+    "Hammersmith & City Line"
+  ],
+  [
+    "Bromley-by-Bow",
+    "West Ham",
+    "Hammersmith & City Line"
+  ],
+  [
+    "West Ham",
+    "Plaistow",
+    "Hammersmith & City Line"
+  ],
+  [
+    "Plaistow",
+    "Upton Park",
+    "Hammersmith & City Line"
+  ],
+  [
+    "Upton Park",
+    "East Ham",
+    "Hammersmith & City Line"
+  ],
+  [
+    "East Ham",
+    "Barking",
+    "Hammersmith & City Line"
+  ],
+  [
+    "Stanmore",
+    "Canons Park",
+    "Jubilee Line"
+  ],
+  [
+    "Canons Park",
+    "Queensbury",
+    "Jubilee Line"
+  ],
+  [
+    "Queensbury",
+    "Kingsbury",
+    "Jubilee Line"
+  ],
+  [
+    "Kingsbury",
+    "Wembley Park",
+    "Jubilee Line"
+  ],
+  [
+    "Wembley Park",
+    "Neasden",
+    "Jubilee Line"
+  ],
+  [
+    "Neasden",
+    "Dollis Hill",
+    "Jubilee Line"
+  ],
+  [
+    "Dollis Hill",
+    "Willesden Green",
+    "Jubilee Line"
+  ],
+  [
+    "Willesden Green",
+    "Kilburn",
+    "Jubilee Line"
+  ],
+  [
+    "Kilburn",
+    "West Hampstead",
+    "Jubilee Line"
+  ],
+  [
+    "West Hampstead",
+    "Finchley Road",
+    "Jubilee Line"
+  ],
+  [
+    "Finchley Road",
+    "Swiss Cottage",
+    "Jubilee Line"
+  ],
+  [
+    "Swiss Cottage",
+    "St. John's Wood",
+    "Jubilee Line"
+  ],
+  [
+    "St. John's Wood",
+    "Baker Street",
+    "Jubilee Line"
+  ],
+  [
+    "Baker Street",
+    "Bond Street",
+    "Jubilee Line"
+  ],
+  [
+    "Bond Street",
+    "Green Park",
+    "Jubilee Line"
+  ],
+  [
+    "Green Park",
+    "Westminster",
+    "Jubilee Line"
+  ],
+  [
+    "Westminster",
+    "Waterloo",
+    "Jubilee Line"
+  ],
+  [
+    "Waterloo",
+    "Southwark",
+    "Jubilee Line"
+  ],
+  [
+    "Southwark",
+    "London Bridge",
+    "Jubilee Line"
+  ],
+  [
+    "London Bridge",
+    "Bermondsey",
+    "Jubilee Line"
+  ],
+  [
+    "Bermondsey",
+    "Canada Water",
+    "Jubilee Line"
+  ],
+  [
+    "Canada Water",
+    "Canary Wharf",
+    "Jubilee Line"
+  ],
+  [
+    "Canary Wharf",
+    "North Greenwich",
+    "Jubilee Line"
+  ],
+  [
+    "North Greenwich",
+    "Canning Town",
+    "Jubilee Line"
+  ],
+  [
+    "Canning Town",
+    "West Ham",
+    "Jubilee Line"
+  ],
+  [
+    "West Ham",
+    "Stratford",
+    "Jubilee Line"
+  ],
+  [
+    "Amersham",
+    "Chalfont & Latimer",
+    "Metropolitan Line"
+  ],
+  [
+    "Chesham",
+    "Chalfont & Latimer",
+    "Metropolitan Line"
+  ],
+  [
+    "Chalfont & Latimer",
+    "Chorleywood",
+    "Metropolitan Line"
+  ],
+  [
+    "Chorleywood",
+    "Rickmansworth",
+    "Metropolitan Line"
+  ],
+  [
+    "Rickmansworth",
+    "Moor Park",
+    "Metropolitan Line"
+  ],
+  [
+    "Watford",
+    "Croxley",
+    "Metropolitan Line"
+  ],
+  [
+    "Croxley",
+    "Moor Park",
+    "Metropolitan Line"
+  ],
+  [
+    "Moor Park",
+    "Northwood",
+    "Metropolitan Line"
+  ],
+  [
+    "Northwood",
+    "Northwood Hills",
+    "Metropolitan Line"
+  ],
+  [
+    "Northwood Hills",
+    "Pinner",
+    "Metropolitan Line"
+  ],
+  [
+    "Pinner",
+    "North Harrow",
+    "Metropolitan Line"
+  ],
+  [
+    "Uxbridge",
+    "Hillingdon",
+    "Metropolitan Line"
+  ],
+  [
+    "Hillingdon",
+    "Ickenham",
+    "Metropolitan Line"
+  ],
+  [
+    "Ickenham",
+    "Ruislip",
+    "Metropolitan Line"
+  ],
+  [
+    "Ruislip",
+    "Ruislip Manor",
+    "Metropolitan Line"
+  ],
+  [
+    "Ruislip Manor",
+    "Eastcote",
+    "Metropolitan Line"
+  ],
+  [
+    "Eastcote",
+    "Rayners Lane",
+    "Metropolitan Line"
+  ],
+  [
+    "Rayners Lane",
+    "West Harrow",
+    "Metropolitan Line"
+  ],
+  [
+    "West Harrow",
+    "Harrow-on-the-Hill",
+    "Metropolitan Line"
+  ],
+  [
+    "North Harrow",
+    "Harrow-on-the-Hill",
+    "Metropolitan Line"
+  ],
+  [
+    "Harrow-on-the-Hill",
+    "Northwick Park",
+    "Metropolitan Line"
+  ],
+  [
+    "Northwick Park",
+    "Preston Road",
+    "Metropolitan Line"
+  ],
+  [
+    "Preston Road",
+    "Wembley Park",
+    "Metropolitan Line"
+  ],
+  [
+    "Wembley Park",
+    "Finchley Road",
+    "Metropolitan Line"
+  ],
+  [
+    "Finchley Road",
+    "Baker Street",
+    "Metropolitan Line"
+  ],
+  [
+    "Baker Street",
+    "Great Portland Street",
+    "Metropolitan Line"
+  ],
+  [
+    "Great Portland Street",
+    "Euston Square",
+    "Metropolitan Line"
+  ],
+  [
+    "Euston Square",
+    "King's Cross St. Pancras",
+    "Metropolitan Line"
+  ],
+  [
+    "King's Cross St. Pancras",
+    "Farringdon",
+    "Metropolitan Line"
+  ],
+  [
+    "Farringdon",
+    "Barbican",
+    "Metropolitan Line"
+  ],
+  [
+    "Barbican",
+    "Moorgate",
+    "Metropolitan Line"
+  ],
+  [
+    "Moorgate",
+    "Liverpool Street",
+    "Metropolitan Line"
+  ],
+  [
+    "Liverpool Street",
+    "Aldgate",
+    "Metropolitan Line"
+  ],
+  [
+    "High Barnet",
+    "Totteridge & Whetstone",
+    "Northern Line"
+  ],
+  [
+    "Totteridge & Whetstone",
+    "Woodside Park",
+    "Northern Line"
+  ],
+  [
+    "Woodside Park",
+    "West Finchley",
+    "Northern Line"
+  ],
+  [
+    "West Finchley",
+    "Finchley Central",
+    "Northern Line"
+  ],
+  [
+    "Mill Hill East",
+    "Finchley Central",
+    "Northern Line"
+  ],
+  [
+    "Finchley Central",
+    "East Finchley",
+    "Northern Line"
+  ],
+  [
+    "East Finchley",
+    "Highgate",
+    "Northern Line"
+  ],
+  [
+    "Highgate",
+    "Archway",
+    "Northern Line"
+  ],
+  [
+    "Archway",
+    "Tufnell Park",
+    "Northern Line"
+  ],
+  [
+    "Tufnell Park",
+    "Kentish Town",
+    "Northern Line"
+  ],
+  [
+    "Kentish Town",
+    "Camden Town",
+    "Northern Line"
+  ],
+  [
+    "Edgware",
+    "Burnt Oak",
+    "Northern Line"
+  ],
+  [
+    "Burnt Oak",
+    "Colindale",
+    "Northern Line"
+  ],
+  [
+    "Colindale",
+    "Hendon Central",
+    "Northern Line"
+  ],
+  [
+    "Hendon Central",
+    "Brent Cross",
+    "Northern Line"
+  ],
+  [
+    "Brent Cross",
+    "Golders Green",
+    "Northern Line"
+  ],
+  [
+    "Golders Green",
+    "Hampstead",
+    "Northern Line"
+  ],
+  [
+    "Hampstead",
+    "Belsize Park",
+    "Northern Line"
+  ],
+  [
+    "Belsize Park",
+    "Chalk Farm",
+    "Northern Line"
+  ],
+  [
+    "Chalk Farm",
+    "Camden Town",
+    "Northern Line"
+  ],
+  [
+    "Camden Town",
+    "Mornington Crescent",
+    "Northern Line"
+  ],
+  [
+    "Mornington Crescent",
+    "Euston",
+    "Northern Line"
+  ],
+  [
+    "Camden Town",
+    "Euston",
+    "Northern Line"
+  ],
+  [
+    "Euston",
+    "Warren Street",
+    "Northern Line"
+  ],
+  [
+    "Warren Street",
+    "Goodge Street",
+    "Northern Line"
+  ],
+  [
+    "Goodge Street",
+    "Tottenham Court Road",
+    "Northern Line"
+  ],
+  [
+    "Tottenham Court Road",
+    "Leicester Square",
+    "Northern Line"
+  ],
+  [
+    "Leicester Square",
+    "Charing Cross",
+    "Northern Line"
+  ],
+  [
+    "Charing Cross",
+    "Embankment",
+    "Northern Line"
+  ],
+  [
+    "Embankment",
+    "Waterloo",
+    "Northern Line"
+  ],
+  [
+    "Waterloo",
+    "Kennington",
+    "Northern Line"
+  ],
+  [
+    "Euston",
+    "King's Cross St. Pancras",
+    "Northern Line"
+  ],
+  [
+    "King's Cross St. Pancras",
+    "Angel",
+    "Northern Line"
+  ],
+  [
+    "Angel",
+    "Old Street",
+    "Northern Line"
+  ],
+  [
+    "Old Street",
+    "Moorgate",
+    "Northern Line"
+  ],
+  [
+    "Moorgate",
+    "Bank",
+    "Northern Line"
+  ],
+  [
+    "Bank",
+    "London Bridge",
+    "Northern Line"
+  ],
+  [
+    "London Bridge",
+    "Borough",
+    "Northern Line"
+  ],
+  [
+    "Borough",
+    "Elephant & Castle",
+    "Northern Line"
+  ],
+  [
+    "Elephant & Castle",
+    "Kennington",
+    "Northern Line"
+  ],
+  [
+    "Kennington",
+    "Nine Elms",
+    "Northern Line"
+  ],
+  [
+    "Nine Elms",
+    "Battersea Power Station",
+    "Northern Line"
+  ],
+  [
+    "Kennington",
+    "Oval",
+    "Northern Line"
+  ],
+  [
+    "Oval",
+    "Stockwell",
+    "Northern Line"
+  ],
+  [
+    "Stockwell",
+    "Clapham North",
+    "Northern Line"
+  ],
+  [
+    "Clapham North",
+    "Clapham Common",
+    "Northern Line"
+  ],
+  [
+    "Clapham Common",
+    "Clapham South",
+    "Northern Line"
+  ],
+  [
+    "Clapham South",
+    "Balham",
+    "Northern Line"
+  ],
+  [
+    "Balham",
+    "Tooting Bec",
+    "Northern Line"
+  ],
+  [
+    "Tooting Bec",
+    "Tooting Broadway",
+    "Northern Line"
+  ],
+  [
+    "Tooting Broadway",
+    "Colliers Wood",
+    "Northern Line"
+  ],
+  [
+    "Colliers Wood",
+    "South Wimbledon",
+    "Northern Line"
+  ],
+  [
+    "South Wimbledon",
+    "Morden",
+    "Northern Line"
+  ],
+  [
+    "Cockfosters",
+    "Oakwood",
+    "Piccadilly Line"
+  ],
+  [
+    "Oakwood",
+    "Southgate",
+    "Piccadilly Line"
+  ],
+  [
+    "Southgate",
+    "Arnos Grove",
+    "Piccadilly Line"
+  ],
+  [
+    "Arnos Grove",
+    "Bounds Green",
+    "Piccadilly Line"
+  ],
+  [
+    "Bounds Green",
+    "Wood Green",
+    "Piccadilly Line"
+  ],
+  [
+    "Wood Green",
+    "Turnpike Lane",
+    "Piccadilly Line"
+  ],
+  [
+    "Turnpike Lane",
+    "Manor House",
+    "Piccadilly Line"
+  ],
+  [
+    "Manor House",
+    "Finsbury Park",
+    "Piccadilly Line"
+  ],
+  [
+    "Finsbury Park",
+    "Arsenal",
+    "Piccadilly Line"
+  ],
+  [
+    "Arsenal",
+    "Holloway Road",
+    "Piccadilly Line"
+  ],
+  [
+    "Holloway Road",
+    "Caledonian Road",
+    "Piccadilly Line"
+  ],
+  [
+    "Caledonian Road",
+    "King's Cross St. Pancras",
+    "Piccadilly Line"
+  ],
+  [
+    "King's Cross St. Pancras",
+    "Russell Square",
+    "Piccadilly Line"
+  ],
+  [
+    "Russell Square",
+    "Holborn",
+    "Piccadilly Line"
+  ],
+  [
+    "Holborn",
+    "Covent Garden",
+    "Piccadilly Line"
+  ],
+  [
+    "Covent Garden",
+    "Leicester Square",
+    "Piccadilly Line"
+  ],
+  [
+    "Leicester Square",
+    "Piccadilly Circus",
+    "Piccadilly Line"
+  ],
+  [
+    "Piccadilly Circus",
+    "Green Park",
+    "Piccadilly Line"
+  ],
+  [
+    "Green Park",
+    "Hyde Park Corner",
+    "Piccadilly Line"
+  ],
+  [
+    "Hyde Park Corner",
+    "Knightsbridge",
+    "Piccadilly Line"
+  ],
+  [
+    "Knightsbridge",
+    "South Kensington",
+    "Piccadilly Line"
+  ],
+  [
+    "South Kensington",
+    "Gloucester Road",
+    "Piccadilly Line"
+  ],
+  [
+    "Gloucester Road",
+    "Earl's Court",
+    "Piccadilly Line"
+  ],
+  [
+    "Earl's Court",
+    "Barons Court",
+    "Piccadilly Line"
+  ],
+  [
+    "Barons Court",
+    "Hammersmith",
+    "Piccadilly Line"
+  ],
+  [
+    "Hammersmith",
+    "Turnham Green",
+    "Piccadilly Line"
+  ],
+  [
+    "Turnham Green",
+    "Acton Town",
+    "Piccadilly Line"
+  ],
+  [
+    "Acton Town",
+    "Ealing Common",
+    "Piccadilly Line"
+  ],
+  [
+    "Ealing Common",
+    "North Ealing",
+    "Piccadilly Line"
+  ],
+  [
+    "North Ealing",
+    "Park Royal",
+    "Piccadilly Line"
+  ],
+  [
+    "Park Royal",
+    "Alperton",
+    "Piccadilly Line"
+  ],
+  [
+    "Alperton",
+    "Sudbury Town",
+    "Piccadilly Line"
+  ],
+  [
+    "Sudbury Town",
+    "Sudbury Hill",
+    "Piccadilly Line"
+  ],
+  [
+    "Sudbury Hill",
+    "South Harrow",
+    "Piccadilly Line"
+  ],
+  [
+    "South Harrow",
+    "Rayners Lane",
+    "Piccadilly Line"
+  ],
+  [
+    "Acton Town",
+    "South Ealing",
+    "Piccadilly Line"
+  ],
+  [
+    "South Ealing",
+    "Northfields",
+    "Piccadilly Line"
+  ],
+  [
+    "Northfields",
+    "Boston Manor",
+    "Piccadilly Line"
+  ],
+  [
+    "Boston Manor",
+    "Osterley",
+    "Piccadilly Line"
+  ],
+  [
+    "Osterley",
+    "Hounslow East",
+    "Piccadilly Line"
+  ],
+  [
+    "Hounslow East",
+    "Hounslow Central",
+    "Piccadilly Line"
+  ],
+  [
+    "Hounslow Central",
+    "Hounslow West",
+    "Piccadilly Line"
+  ],
+  [
+    "Hounslow West",
+    "Hatton Cross",
+    "Piccadilly Line"
+  ],
+  [
+    "Hatton Cross",
+    "Heathrow Terminals 2 & 3",
+    "Piccadilly Line"
+  ],
+  [
+    "Heathrow Terminals 2 & 3",
+    "Heathrow Terminal 5",
+    "Piccadilly Line"
+  ],
+  [
+    "Hatton Cross",
+    "Heathrow Terminal 4",
+    "Piccadilly Line"
+  ],
+  [
+    "Heathrow Terminal 4",
+    "Heathrow Terminals 2 & 3",
+    "Piccadilly Line"
+  ],
+  [
+    "Walthamstow Central",
+    "Blackhorse Road",
+    "Victoria Line"
+  ],
+  [
+    "Blackhorse Road",
+    "Tottenham Hale",
+    "Victoria Line"
+  ],
+  [
+    "Tottenham Hale",
+    "Seven Sisters",
+    "Victoria Line"
+  ],
+  [
+    "Seven Sisters",
+    "Finsbury Park",
+    "Victoria Line"
+  ],
+  [
+    "Finsbury Park",
+    "Highbury & Islington",
+    "Victoria Line"
+  ],
+  [
+    "Highbury & Islington",
+    "King's Cross St. Pancras",
+    "Victoria Line"
+  ],
+  [
+    "King's Cross St. Pancras",
+    "Euston",
+    "Victoria Line"
+  ],
+  [
+    "Euston",
+    "Warren Street",
+    "Victoria Line"
+  ],
+  [
+    "Warren Street",
+    "Oxford Circus",
+    "Victoria Line"
+  ],
+  [
+    "Oxford Circus",
+    "Green Park",
+    "Victoria Line"
+  ],
+  [
+    "Green Park",
+    "Victoria",
+    "Victoria Line"
+  ],
+  [
+    "Victoria",
+    "Pimlico",
+    "Victoria Line"
+  ],
+  [
+    "Pimlico",
+    "Vauxhall",
+    "Victoria Line"
+  ],
+  [
+    "Vauxhall",
+    "Stockwell",
+    "Victoria Line"
+  ],
+  [
+    "Stockwell",
+    "Brixton",
+    "Victoria Line"
+  ],
+  [
+    "Waterloo",
+    "Bank",
+    "Waterloo & City Line"
+  ],
+  [
+    "Reading",
+    "Twyford",
+    "Elizabeth Line"
+  ],
+  [
+    "Twyford",
+    "Maidenhead",
+    "Elizabeth Line"
+  ],
+  [
+    "Maidenhead",
+    "Taplow",
+    "Elizabeth Line"
+  ],
+  [
+    "Taplow",
+    "Burnham",
+    "Elizabeth Line"
+  ],
+  [
+    "Burnham",
+    "Slough",
+    "Elizabeth Line"
+  ],
+  [
+    "Slough",
+    "Langley",
+    "Elizabeth Line"
+  ],
+  [
+    "Langley",
+    "Iver",
+    "Elizabeth Line"
+  ],
+  [
+    "Iver",
+    "West Drayton",
+    "Elizabeth Line"
+  ],
+  [
+    "Heathrow Terminal 5",
+    "Heathrow Terminals 2 & 3",
+    "Elizabeth Line"
+  ],
+  [
+    "Heathrow Terminal 4",
+    "Heathrow Terminals 2 & 3",
+    "Elizabeth Line"
+  ],
+  [
+    "Heathrow Terminals 2 & 3",
+    "Hayes & Harlington",
+    "Elizabeth Line"
+  ],
+  [
+    "West Drayton",
+    "Hayes & Harlington",
+    "Elizabeth Line"
+  ],
+  [
+    "Hayes & Harlington",
+    "Southall",
+    "Elizabeth Line"
+  ],
+  [
+    "Southall",
+    "Hanwell",
+    "Elizabeth Line"
+  ],
+  [
+    "Hanwell",
+    "West Ealing",
+    "Elizabeth Line"
+  ],
+  [
+    "West Ealing",
+    "Ealing Broadway",
+    "Elizabeth Line"
+  ],
+  [
+    "Ealing Broadway",
+    "Acton Main Line",
+    "Elizabeth Line"
+  ],
+  [
+    "Acton Main Line",
+    "Paddington",
+    "Elizabeth Line"
+  ],
+  [
+    "Paddington",
+    "Tottenham Court Road",
+    "Elizabeth Line"
+  ],
+  [
+    "Tottenham Court Road",
+    "Farringdon",
+    "Elizabeth Line"
+  ],
+  [
+    "Farringdon",
+    "Liverpool Street",
+    "Elizabeth Line"
+  ],
+  [
+    "Liverpool Street",
+    "Whitechapel",
+    "Elizabeth Line"
+  ],
+  [
+    "Whitechapel",
+    "Canary Wharf",
+    "Elizabeth Line"
+  ],
+  [
+    "Canary Wharf",
+    "Custom House",
+    "Elizabeth Line"
+  ],
+  [
+    "Custom House",
+    "Woolwich",
+    "Elizabeth Line"
+  ],
+  [
+    "Woolwich",
+    "Abbey Wood",
+    "Elizabeth Line"
+  ],
+  [
+    "Whitechapel",
+    "Stratford",
+    "Elizabeth Line"
+  ],
+  [
+    "Stratford",
+    "Maryland",
+    "Elizabeth Line"
+  ],
+  [
+    "Maryland",
+    "Forest Gate",
+    "Elizabeth Line"
+  ],
+  [
+    "Forest Gate",
+    "Manor Park",
+    "Elizabeth Line"
+  ],
+  [
+    "Manor Park",
+    "Ilford",
+    "Elizabeth Line"
+  ],
+  [
+    "Ilford",
+    "Seven Kings",
+    "Elizabeth Line"
+  ],
+  [
+    "Seven Kings",
+    "Goodmayes",
+    "Elizabeth Line"
+  ],
+  [
+    "Goodmayes",
+    "Chadwell Heath",
+    "Elizabeth Line"
+  ],
+  [
+    "Chadwell Heath",
+    "Romford",
+    "Elizabeth Line"
+  ],
+  [
+    "Romford",
+    "Gidea Park",
+    "Elizabeth Line"
+  ],
+  [
+    "Gidea Park",
+    "Harold Wood",
+    "Elizabeth Line"
+  ],
+  [
+    "Harold Wood",
+    "Brentwood",
+    "Elizabeth Line"
+  ],
+  [
+    "Brentwood",
+    "Shenfield",
+    "Elizabeth Line"
+  ],
+  [
+    "Richmond",
+    "Kew Gardens",
+    "London Overground (Mildmay Line)"
+  ],
+  [
+    "Kew Gardens",
+    "Gunnersbury",
+    "London Overground (Mildmay Line)"
+  ],
+  [
+    "Gunnersbury",
+    "South Acton",
+    "London Overground (Mildmay Line)"
+  ],
+  [
+    "South Acton",
+    "Acton Central",
+    "London Overground (Mildmay Line)"
+  ],
+  [
+    "Acton Central",
+    "Willesden Junction",
+    "London Overground (Mildmay Line)"
+  ],
+  [
+    "Clapham Junction",
+    "Imperial Wharf",
+    "London Overground (Mildmay Line)"
+  ],
+  [
+    "Imperial Wharf",
+    "West Brompton",
+    "London Overground (Mildmay Line)"
+  ],
+  [
+    "West Brompton",
+    "Kensington (Olympia)",
+    "London Overground (Mildmay Line)"
+  ],
+  [
+    "Kensington (Olympia)",
+    "Shepherd's Bush",
+    "London Overground (Mildmay Line)"
+  ],
+  [
+    "Shepherd's Bush",
+    "Willesden Junction",
+    "London Overground (Mildmay Line)"
+  ],
+  [
+    "Willesden Junction",
+    "Kensal Rise",
+    "London Overground (Mildmay Line)"
+  ],
+  [
+    "Kensal Rise",
+    "Brondesbury Park",
+    "London Overground (Mildmay Line)"
+  ],
+  [
+    "Brondesbury Park",
+    "Brondesbury",
+    "London Overground (Mildmay Line)"
+  ],
+  [
+    "Brondesbury",
+    "West Hampstead",
+    "London Overground (Mildmay Line)"
+  ],
+  [
+    "West Hampstead",
+    "Finchley Road & Frognal",
+    "London Overground (Mildmay Line)"
+  ],
+  [
+    "Finchley Road & Frognal",
+    "Hampstead Heath",
+    "London Overground (Mildmay Line)"
+  ],
+  [
+    "Hampstead Heath",
+    "Gospel Oak",
+    "London Overground (Mildmay Line)"
+  ],
+  [
+    "Gospel Oak",
+    "Kentish Town West",
+    "London Overground (Mildmay Line)"
+  ],
+  [
+    "Kentish Town West",
+    "Camden Road",
+    "London Overground (Mildmay Line)"
+  ],
+  [
+    "Camden Road",
+    "Caledonian Road & Barnsbury",
+    "London Overground (Mildmay Line)"
+  ],
+  [
+    "Caledonian Road & Barnsbury",
+    "Highbury & Islington",
+    "London Overground (Mildmay Line)"
+  ],
+  [
+    "Highbury & Islington",
+    "Canonbury",
+    "London Overground (Mildmay Line)"
+  ],
+  [
+    "Canonbury",
+    "Dalston Kingsland",
+    "London Overground (Mildmay Line)"
+  ],
+  [
+    "Dalston Kingsland",
+    "Hackney Central/Down",
+    "London Overground (Mildmay Line)"
+  ],
+  [
+    "Hackney Central/Down",
+    "Homerton",
+    "London Overground (Mildmay Line)"
+  ],
+  [
+    "Homerton",
+    "Hackney Wick",
+    "London Overground (Mildmay Line)"
+  ],
+  [
+    "Hackney Wick",
+    "Stratford",
+    "London Overground (Mildmay Line)"
+  ],
+  [
+    "Gospel Oak",
+    "Upper Holloway",
+    "London Overground (Suffragette Line)"
+  ],
+  [
+    "Upper Holloway",
+    "Crouch Hill",
+    "London Overground (Suffragette Line)"
+  ],
+  [
+    "Crouch Hill",
+    "Harringay Green Lanes",
+    "London Overground (Suffragette Line)"
+  ],
+  [
+    "Harringay Green Lanes",
+    "South Tottenham",
+    "London Overground (Suffragette Line)"
+  ],
+  [
+    "South Tottenham",
+    "Blackhorse Road",
+    "London Overground (Suffragette Line)"
+  ],
+  [
+    "Blackhorse Road",
+    "Walthamstow Queen's Road",
+    "London Overground (Suffragette Line)"
+  ],
+  [
+    "Walthamstow Queen's Road",
+    "Leyton Midland Road",
+    "London Overground (Suffragette Line)"
+  ],
+  [
+    "Leyton Midland Road",
+    "Leytonstone High Road",
+    "London Overground (Suffragette Line)"
+  ],
+  [
+    "Leytonstone High Road",
+    "Wanstead Park",
+    "London Overground (Suffragette Line)"
+  ],
+  [
+    "Wanstead Park",
+    "Woodgrange Park",
+    "London Overground (Suffragette Line)"
+  ],
+  [
+    "Woodgrange Park",
+    "Barking",
+    "London Overground (Suffragette Line)"
+  ],
+  [
+    "Barking",
+    "Barking Riverside",
+    "London Overground (Suffragette Line)"
+  ],
+  [
+    "Watford Junction",
+    "Watford High Street",
+    "London Overground (Lioness Line)"
+  ],
+  [
+    "Watford High Street",
+    "Bushey",
+    "London Overground (Lioness Line)"
+  ],
+  [
+    "Bushey",
+    "Carpenders Park",
+    "London Overground (Lioness Line)"
+  ],
+  [
+    "Carpenders Park",
+    "Hatch End",
+    "London Overground (Lioness Line)"
+  ],
+  [
+    "Hatch End",
+    "Headstone Lane",
+    "London Overground (Lioness Line)"
+  ],
+  [
+    "Headstone Lane",
+    "Harrow & Wealdstone",
+    "London Overground (Lioness Line)"
+  ],
+  [
+    "Harrow & Wealdstone",
+    "Kenton",
+    "London Overground (Lioness Line)"
+  ],
+  [
+    "Kenton",
+    "South Kenton",
+    "London Overground (Lioness Line)"
+  ],
+  [
+    "South Kenton",
+    "North Wembley",
+    "London Overground (Lioness Line)"
+  ],
+  [
+    "North Wembley",
+    "Wembley Central",
+    "London Overground (Lioness Line)"
+  ],
+  [
+    "Wembley Central",
+    "Stonebridge Park",
+    "London Overground (Lioness Line)"
+  ],
+  [
+    "Stonebridge Park",
+    "Harlesden",
+    "London Overground (Lioness Line)"
+  ],
+  [
+    "Harlesden",
+    "Willesden Junction",
+    "London Overground (Lioness Line)"
+  ],
+  [
+    "Willesden Junction",
+    "Kensal Green",
+    "London Overground (Lioness Line)"
+  ],
+  [
+    "Kensal Green",
+    "Queen's Park",
+    "London Overground (Lioness Line)"
+  ],
+  [
+    "Queen's Park",
+    "Kilburn High Road",
+    "London Overground (Lioness Line)"
+  ],
+  [
+    "Kilburn High Road",
+    "South Hampstead",
+    "London Overground (Lioness Line)"
+  ],
+  [
+    "South Hampstead",
+    "Euston",
+    "London Overground (Lioness Line)"
+  ],
+  [
+    "Highbury & Islington",
+    "Canonbury",
+    "London Overground (Windrush Line)"
+  ],
+  [
+    "Canonbury",
+    "Dalston Junction",
+    "London Overground (Windrush Line)"
+  ],
+  [
+    "Dalston Junction",
+    "Haggerston",
+    "London Overground (Windrush Line)"
+  ],
+  [
+    "Haggerston",
+    "Hoxton",
+    "London Overground (Windrush Line)"
+  ],
+  [
+    "Hoxton",
+    "Shoreditch High Street",
+    "London Overground (Windrush Line)"
+  ],
+  [
+    "Shoreditch High Street",
+    "Whitechapel",
+    "London Overground (Windrush Line)"
+  ],
+  [
+    "Whitechapel",
+    "Shadwell",
+    "London Overground (Windrush Line)"
+  ],
+  [
+    "Shadwell",
+    "Wapping",
+    "London Overground (Windrush Line)"
+  ],
+  [
+    "Wapping",
+    "Rotherhithe",
+    "London Overground (Windrush Line)"
+  ],
+  [
+    "Rotherhithe",
+    "Canada Water",
+    "London Overground (Windrush Line)"
+  ],
+  [
+    "Canada Water",
+    "Surrey Quays",
+    "London Overground (Windrush Line)"
+  ],
+  [
+    "Surrey Quays",
+    "New Cross",
+    "London Overground (Windrush Line)"
+  ],
+  [
+    "Surrey Quays",
+    "New Cross Gate",
+    "London Overground (Windrush Line)"
+  ],
+  [
+    "New Cross Gate",
+    "Brockley",
+    "London Overground (Windrush Line)"
+  ],
+  [
+    "Brockley",
+    "Honor Oak Park",
+    "London Overground (Windrush Line)"
+  ],
+  [
+    "Honor Oak Park",
+    "Forest Hill",
+    "London Overground (Windrush Line)"
+  ],
+  [
+    "Forest Hill",
+    "Sydenham",
+    "London Overground (Windrush Line)"
+  ],
+  [
+    "Sydenham",
+    "Crystal Palace",
+    "London Overground (Windrush Line)"
+  ],
+  [
+    "Sydenham",
+    "Penge West",
+    "London Overground (Windrush Line)"
+  ],
+  [
+    "Penge West",
+    "Anerley",
+    "London Overground (Windrush Line)"
+  ],
+  [
+    "Anerley",
+    "Norwood Junction",
+    "London Overground (Windrush Line)"
+  ],
+  [
+    "Norwood Junction",
+    "West Croydon",
+    "London Overground (Windrush Line)"
+  ],
+  [
+    "Surrey Quays",
+    "Queens Road Peckham",
+    "London Overground (Windrush Line)"
+  ],
+  [
+    "Queens Road Peckham",
+    "Peckham Rye",
+    "London Overground (Windrush Line)"
+  ],
+  [
+    "Peckham Rye",
+    "Denmark Hill",
+    "London Overground (Windrush Line)"
+  ],
+  [
+    "Denmark Hill",
+    "Clapham High Street",
+    "London Overground (Windrush Line)"
+  ],
+  [
+    "Clapham High Street",
+    "Wandsworth Road",
+    "London Overground (Windrush Line)"
+  ],
+  [
+    "Wandsworth Road",
+    "Clapham Junction",
+    "London Overground (Windrush Line)"
+  ],
+  [
+    "Liverpool Street",
+    "Bethnal Green",
+    "London Overground (Weaver Line)"
+  ],
+  [
+    "Bethnal Green",
+    "Cambridge Heath",
+    "London Overground (Weaver Line)"
+  ],
+  [
+    "Cambridge Heath",
+    "London Fields",
+    "London Overground (Weaver Line)"
+  ],
+  [
+    "London Fields",
+    "Hackney Central/Down",
+    "London Overground (Weaver Line)"
+  ],
+  [
+    "Hackney Central/Down",
+    "Rectory Road",
+    "London Overground (Weaver Line)"
+  ],
+  [
+    "Rectory Road",
+    "Stoke Newington",
+    "London Overground (Weaver Line)"
+  ],
+  [
+    "Stoke Newington",
+    "Stamford Hill",
+    "London Overground (Weaver Line)"
+  ],
+  [
+    "Stamford Hill",
+    "Seven Sisters",
+    "London Overground (Weaver Line)"
+  ],
+  [
+    "Seven Sisters",
+    "Bruce Grove",
+    "London Overground (Weaver Line)"
+  ],
+  [
+    "Bruce Grove",
+    "White Hart Lane",
+    "London Overground (Weaver Line)"
+  ],
+  [
+    "White Hart Lane",
+    "Silver Street",
+    "London Overground (Weaver Line)"
+  ],
+  [
+    "Silver Street",
+    "Edmonton Green",
+    "London Overground (Weaver Line)"
+  ],
+  [
+    "Edmonton Green",
+    "Bush Hill Park",
+    "London Overground (Weaver Line)"
+  ],
+  [
+    "Bush Hill Park",
+    "Enfield Town",
+    "London Overground (Weaver Line)"
+  ],
+  [
+    "Edmonton Green",
+    "Southbury",
+    "London Overground (Weaver Line)"
+  ],
+  [
+    "Southbury",
+    "Turkey Street",
+    "London Overground (Weaver Line)"
+  ],
+  [
+    "Turkey Street",
+    "Theobalds Grove",
+    "London Overground (Weaver Line)"
+  ],
+  [
+    "Theobalds Grove",
+    "Cheshunt",
+    "London Overground (Weaver Line)"
+  ],
+  [
+    "Hackney Central/Down",
+    "Clapton",
+    "London Overground (Weaver Line)"
+  ],
+  [
+    "Clapton",
+    "St James Street",
+    "London Overground (Weaver Line)"
+  ],
+  [
+    "St James Street",
+    "Walthamstow Central",
+    "London Overground (Weaver Line)"
+  ],
+  [
+    "Walthamstow Central",
+    "Wood Street",
+    "London Overground (Weaver Line)"
+  ],
+  [
+    "Wood Street",
+    "Highams Park",
+    "London Overground (Weaver Line)"
+  ],
+  [
+    "Highams Park",
+    "Chingford",
+    "London Overground (Weaver Line)"
+  ],
+  [
+    "Romford",
+    "Emerson Park",
+    "London Overground (Liberty Line)"
+  ],
+  [
+    "Emerson Park",
+    "Upminster",
+    "London Overground (Liberty Line)"
+  ]
+]

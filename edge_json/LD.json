@@ -236,11 +236,11 @@
   ],
   [
     "St. Paul's",
-    "Bank",
+    "Bank/Monument",
     "Central Line"
   ],
   [
-    "Bank",
+    "Bank/Monument",
     "Liverpool Street",
     "Central Line"
   ],
@@ -461,11 +461,11 @@
   ],
   [
     "Tower Hill",
-    "Monument",
+    "Bank/Monument",
     "Circle Line"
   ],
   [
-    "Monument",
+    "Bank/Monument",
     "Cannon Street",
     "Circle Line"
   ],
@@ -731,11 +731,11 @@
   ],
   [
     "Cannon Street",
-    "Monument",
+    "Bank/Monument",
     "District Line"
   ],
   [
-    "Monument",
+    "Bank/Monument",
     "Tower Hill",
     "District Line"
   ],
@@ -1446,11 +1446,11 @@
   ],
   [
     "Moorgate",
-    "Bank",
+    "Bank/Monument",
     "Northern Line"
   ],
   [
-    "Bank",
+    "Bank/Monument",
     "London Bridge",
     "Northern Line"
   ],
@@ -1846,7 +1846,7 @@
   ],
   [
     "Waterloo",
-    "Bank",
+    "Bank/Monument",
     "Waterloo & City Line"
   ],
   [

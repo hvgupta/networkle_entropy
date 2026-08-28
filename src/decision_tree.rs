@@ -63,7 +63,7 @@ fn one_step_entropy<'a>(
 
         match lowest_station {
             None => lowest_station = Some((station, entropy)),
-            Some((_, lowest_entropy)) if entropy < lowest_entropy => {
+            Some((_, lowest_entropy)) if entropy > lowest_entropy => {
                 lowest_station = Some((station, entropy));
             }
             _ => {}

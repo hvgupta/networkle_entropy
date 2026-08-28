@@ -1,6 +1,7 @@
 use serde_json::from_str;
-use std::collections::{HashMap, HashSet, VecDeque};
-use std::fs;
+use std::{
+    collections::{HashMap, HashSet, VecDeque}, env, format, fs,
+};
 mod decision_tree;
 use decision_tree::{DecisionTree, OneToManyMap, Station};
 
@@ -50,7 +51,13 @@ fn get_dist_matrix(
 }
 
 fn main() {
-    let Ok(data) = fs::read_to_string("./edge_json/LD.json") else {
+    let args: Vec<String> = env::args().collect();
+    if args.len() < 2 {
+        eprintln!("Provide the path to the json file");
+        return;
+    }
+
+    let Ok(data) = fs::read_to_string(format!("{}", &args[1])) else {
         return;
     };
 

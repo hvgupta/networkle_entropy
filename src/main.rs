@@ -1,15 +1,22 @@
-use serde_json::from_str;
+use dialoguer::{
+    Confirm, Input, Select,
+    theme::{ColorfulTheme, Theme},
+};
+use serde::Deserialize;
 use std::{
-    collections::{HashMap, HashSet, VecDeque}, env, format, fs,
+    collections::{HashMap, HashSet, VecDeque},
+    format, println,
+    time::{SystemTime, UNIX_EPOCH},
 };
 mod decision_tree;
 use decision_tree::{DecisionTree, OneToManyMap, Station};
+
+use crate::decision_tree::{DecisionTreeNode, EdgeType};
 
 fn get_dist_matrix(
     neighbour_map: &OneToManyMap,
     stations: &HashSet<String>,
 ) -> HashMap<String, HashMap<String, u32>> {
-    // 1. Change to `let mut` so we can update values during BFS
     let mut dist_matrix: HashMap<String, HashMap<String, u32>> = stations
         .iter()
         .map(|s1| {
@@ -50,57 +57,234 @@ fn get_dist_matrix(
     dist_matrix
 }
 
-fn main() {
-    let args: Vec<String> = env::args().collect();
-    if args.len() < 2 {
-        eprintln!("Provide the path to the json file");
-        return;
+#[derive(Debug, Deserialize)]
+struct StationInfo {
+    name: String,
+    lines: Vec<String>,
+
+    #[serde(default)]
+    adjacent: Vec<AdjacentStation>,
+}
+
+#[derive(Debug, Deserialize)]
+#[serde(untagged)]
+enum AdjacentStation {
+    Name(String),
+    Details(AdjacentStationDetails),
+}
+impl AdjacentStation {
+    fn into_name(self) -> String {
+        match self {
+            Self::Name(name) => name,
+            Self::Details(details) => details.name,
+        }
+    }
+}
+
+#[derive(Debug, Deserialize)]
+struct AdjacentStationDetails {
+    name: String,
+}
+
+fn get_city_info(theme: &ColorfulTheme) -> Vec<StationInfo> {
+    let unix_time = SystemTime::now()
+        .duration_since(UNIX_EPOCH)
+        .unwrap()
+        .as_secs();
+
+    let cities_latest_version: HashMap<String, u32> =
+        match ureq::get("https://networkle.fun/data/versions.json")
+            .query("v", unix_time.to_string())
+            .call()
+        {
+            Ok(mut body) => body.body_mut().read_json().unwrap(),
+            Err(err) => {
+                eprintln!(
+                    "Failed to retrieve valid city lists from networkle.fun, {}",
+                    err
+                );
+                std::process::exit(1);
+            }
+        };
+
+    let available_cities: Vec<&String> = cities_latest_version
+        .keys()
+        .filter(|&f| f != "melbourne" && f != "newyork")
+        .collect();
+
+    let selection = Select::with_theme(theme)
+        .with_prompt("Select a Networkle game city configuration")
+        .default(0)
+        .items(&available_cities[..])
+        .interact()
+        .unwrap();
+
+    let chosen_city = available_cities[selection];
+    let version = cities_latest_version.get(chosen_city).unwrap();
+
+    match ureq::get(format!("https://networkle.fun/data/{}.json", chosen_city))
+        .query("v", version.to_string())
+        .call()
+    {
+        Ok(mut body) => match body.body_mut().read_json() {
+            Ok(data) => data,
+            Err(err) => {
+                println!("the error is {}", err);
+                std::process::exit(1);
+            }
+        },
+        Err(err) => {
+            eprintln!(
+                "Failed to retrieve valid city information from networkle.fun, {}",
+                err
+            );
+            std::process::exit(1);
+        }
+    }
+}
+
+enum LineRelation {
+    SharesAtLeastOneLine,
+    SharesNoLines,
+    Found,
+}
+fn ask_for_feedback(
+    theme: &ColorfulTheme,
+    station_name: &str,
+) -> Result<Option<(LineRelation, u32)>, dialoguer::Error> {
+    let is_hidden_station = Confirm::with_theme(theme)
+        .with_prompt(format!(
+            "Recommended station to guess: {station_name}\nIs this the hidden station?"
+        ))
+        .default(false)
+        .interact()?;
+
+    if is_hidden_station {
+        return Ok(None);
     }
 
-    let Ok(data) = fs::read_to_string(format!("{}", &args[1])) else {
-        return;
+    let relation_index = Select::with_theme(theme)
+        .with_prompt(format!(
+            "Does the hidden station share at least one line with \"{station_name}\"?"
+        ))
+        .items(&[
+            "Station contains/is on a line which has the hidden station",
+            "Station is not on the line which contains the hidden station",
+            "Found Station",
+        ])
+        .default(0)
+        .interact()?;
+
+    let relation = match relation_index {
+        0 => LineRelation::SharesAtLeastOneLine,
+        1 => LineRelation::SharesNoLines,
+        2 => return Ok(Some((LineRelation::Found, 0))),
+        _ => unreachable!("Select returned an invalid index"),
     };
 
-    let Ok(parsed_json) = from_str::<Vec<Vec<String>>>(&data) else {
-        return;
-    };
+    let distance: u32 = Input::with_theme(theme)
+        .with_prompt(format!(
+            "What is the minimum distance from \"{station_name}\" to the hidden station"
+        ))
+        .validate_with(|distance: &u32| {
+            if *distance >= 1 {
+                Ok(())
+            } else {
+                Err("The distance must be at least 1 because this is not the hidden station.")
+            }
+        })
+        .interact_text()?;
 
-    let mut line_to_stations: HashMap<String, HashSet<String>> = HashMap::new();
+    Ok(Some((relation, distance)))
+}
+
+fn print_status(theme: &ColorfulTheme, message: &str) {
+    let mut output = String::new();
+
+    theme
+        .format_prompt(&mut output, message)
+        .expect("formatting into String should not fail");
+
+    eprintln!("{output}");
+}
+
+fn print_error(theme: &ColorfulTheme, message: &str) {
+    let mut output = String::new();
+    theme
+        .format_error(&mut output, message)
+        .expect("formatting into String should not fail");
+    eprintln!("{output}");
+}
+
+fn walk_through(tree: DecisionTree, theme: ColorfulTheme) {
+    let mut cur_node: &DecisionTreeNode = &tree.root;
+    loop {
+        if cur_node.is_leaf() {
+            print_status(
+                &theme,
+                &format!("Leaf node reached: {:?}", cur_node.station.name),
+            );
+            break;
+        }
+
+        let station_name = &cur_node.station.name;
+
+        let Some((relation, distance)) = ask_for_feedback(&theme, station_name).unwrap() else {
+            print_status(&theme, &format!("Found the hidden station: {station_name}"));
+            break;
+        };
+
+        let edge = match relation {
+            LineRelation::SharesAtLeastOneLine => EdgeType::SameLine(distance),
+            LineRelation::SharesNoLines => EdgeType::OtherLine(distance),
+            LineRelation::Found => break,
+        };
+
+        cur_node = match cur_node.get_child(edge) {
+            Some(next_node) => next_node,
+            None => {
+                print_error(
+                    &theme,
+                    "No matching decision-tree branch exists. \
+                 Check whether the line relationship or distance was entered correctly.",
+                );
+                break;
+            }
+        }
+    }
+    print_status(&theme, "End of the code");
+}
+
+fn main() {
+    let theme = ColorfulTheme::default();
+    let city_network_json = get_city_info(&theme);
+
+    let mut line_to_stations: OneToManyMap = OneToManyMap::new();
     let mut station_to_lines: OneToManyMap = OneToManyMap::new();
     let mut neighbour_map: OneToManyMap = OneToManyMap::new();
 
-    for data_tuple in &parsed_json {
-        let Some(line_name) = data_tuple.get(2) else {
-            println!("{:?}", data_tuple);
-            continue;
-        };
-
-        line_to_stations
-            .entry(line_name.clone())
-            .or_default()
-            .extend(data_tuple.get(0..2).unwrap().iter().cloned());
-
-        let (Some(station1), Some(station2)) = (data_tuple.get(0), data_tuple.get(1)) else {
-            continue;
-        };
+    for city_info in city_network_json {
+        for line in &city_info.lines {
+            line_to_stations
+                .entry(line.clone())
+                .or_default()
+                .insert(city_info.name.clone());
+        }
 
         station_to_lines
-            .entry(station1.clone())
+            .entry(city_info.name.clone())
             .or_default()
-            .push(line_name.clone());
-        station_to_lines
-            .entry(station2.clone())
-            .or_default()
-            .push(line_name.clone());
+            .extend(city_info.lines);
 
         neighbour_map
-            .entry(station1.clone())
+            .entry(city_info.name.clone())
             .or_default()
-            .push(station2.clone());
-        neighbour_map
-            .entry(station2.clone())
-            .or_default()
-            .push(station1.clone());
+            .extend(
+                city_info
+                    .adjacent
+                    .into_iter()
+                    .map(AdjacentStation::into_name),
+            );
     }
 
     let stations: HashSet<String> = station_to_lines.keys().cloned().collect();
@@ -124,6 +308,16 @@ fn main() {
             other_line_stations: (&stations) - (&cur_line_stations),
         });
     }
-    let tree = DecisionTree::new(station_list, &stations);
-    tree.print();
+    let tree = DecisionTree::new(station_list, &stations).expect("Some error has occured");
+    match Select::with_theme(&theme)
+        .with_prompt("Do you want the tree or the walkthrough")
+        .items(["Tree", "Walkthrough"])
+        .default(1)
+        .interact()
+        .unwrap()
+    {
+        0 => tree.print(),
+        1 => walk_through(tree, theme),
+        _ => println!("unreachable"),
+    }
 }

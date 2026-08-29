@@ -1,6 +1,6 @@
 use std::collections::{HashMap, HashSet};
 
-pub type OneToManyMap = HashMap<String, Vec<String>>;
+pub type OneToManyMap = HashMap<String, HashSet<String>>;
 
 fn cat_entropy_calc(
     trgt_station_dist_matrix: &HashMap<String, u32>,
@@ -88,8 +88,8 @@ pub enum EdgeType {
 }
 
 #[derive(Debug)]
-struct DecisionTreeNode {
-    station: Station,
+pub struct DecisionTreeNode {
+    pub station: Station,
     children: HashMap<EdgeType, DecisionTreeNode>,
 }
 
@@ -141,6 +141,18 @@ impl DecisionTreeNode {
             station: selected_station,
             children,
         })
+    }
+
+    pub fn is_leaf(&self) -> bool{
+        return self.children.len() == 0;
+    }
+
+    pub fn get_child(&self, edge: EdgeType)-> Option<&DecisionTreeNode> {
+        if self.is_leaf() {
+            return Option::None;
+        }
+
+        self.children.get(&edge)
     }
 
     fn print_recursive(&self, depth: usize, incoming_edge: Option<&EdgeType>) {
@@ -227,13 +239,14 @@ fn map_distances_to_stations(
 
 #[derive(Debug)]
 pub struct DecisionTree {
-    root: DecisionTreeNode,
+    pub root: DecisionTreeNode,
 }
 impl DecisionTree {
-    pub fn new(stations: Vec<Station>, valid_stations: &HashSet<String>) -> DecisionTree {
-        return DecisionTree {
-            root: DecisionTreeNode::new(stations, valid_stations).unwrap(),
-        };
+    pub fn new(stations: Vec<Station>, valid_stations: &HashSet<String>) -> Option<DecisionTree> {
+        match DecisionTreeNode::new(stations, valid_stations) {
+            Some(root_node) => Some(DecisionTree{root: root_node}),
+            None => None
+        }
     }
     pub fn print(&self) {
         self.root.print_recursive(0, None);

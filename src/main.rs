@@ -113,7 +113,7 @@ fn get_city_info(theme: &ColorfulTheme) -> Vec<StationInfo> {
     let available_cities: Vec<&String> = cities
         .iter()
         .map(|f| &f.id)
-        .filter(|&f| f != "melbourne" && f != "newyork" && f!= "london-tube")
+        .filter(|&f| f!= "london-tube")
         .collect();
     let cities_latest_version: HashMap<String, u32> =
         match ureq::get("https://networkle.fun/data/versions.json")

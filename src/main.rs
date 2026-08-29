@@ -86,12 +86,35 @@ struct AdjacentStationDetails {
     name: String,
 }
 
+#[derive(Debug, Deserialize)]
+struct Cities {
+    id: String,
+}
+
 fn get_city_info(theme: &ColorfulTheme) -> Vec<StationInfo> {
     let unix_time = SystemTime::now()
         .duration_since(UNIX_EPOCH)
         .unwrap()
         .as_secs();
 
+    let cities: Vec<Cities> = match ureq::get("https://networkle.fun/data/cities.json")
+        .query("v", unix_time.to_string())
+        .call()
+    {
+        Ok(mut body) => body.body_mut().read_json().unwrap(),
+        Err(err) => {
+            eprintln!(
+                "Failed to retrieve valid city lists from networkle.fun, {}",
+                err
+            );
+            std::process::exit(1);
+        }
+    };
+    let available_cities: Vec<&String> = cities
+        .iter()
+        .map(|f| &f.id)
+        .filter(|&f| f != "melbourne" && f != "newyork" && f!= "london-tube")
+        .collect();
     let cities_latest_version: HashMap<String, u32> =
         match ureq::get("https://networkle.fun/data/versions.json")
             .query("v", unix_time.to_string())
@@ -107,11 +130,6 @@ fn get_city_info(theme: &ColorfulTheme) -> Vec<StationInfo> {
             }
         };
 
-    let available_cities: Vec<&String> = cities_latest_version
-        .keys()
-        .filter(|&f| f != "melbourne" && f != "newyork")
-        .collect();
-
     let selection = Select::with_theme(theme)
         .with_prompt("Select a Networkle game city configuration")
         .default(0)
@@ -120,7 +138,7 @@ fn get_city_info(theme: &ColorfulTheme) -> Vec<StationInfo> {
         .unwrap();
 
     let chosen_city = available_cities[selection];
-    let version = cities_latest_version.get(chosen_city).unwrap();
+    let version = cities_latest_version.get(chosen_city).unwrap_or(&1u32);
 
     match ureq::get(format!("https://networkle.fun/data/{}.json", chosen_city))
         .query("v", version.to_string())
@@ -146,7 +164,6 @@ fn get_city_info(theme: &ColorfulTheme) -> Vec<StationInfo> {
 enum LineRelation {
     SharesAtLeastOneLine,
     SharesNoLines,
-    Found,
 }
 fn ask_for_feedback(
     theme: &ColorfulTheme,
@@ -170,7 +187,6 @@ fn ask_for_feedback(
         .items(&[
             "Station contains/is on a line which has the hidden station",
             "Station is not on the line which contains the hidden station",
-            "Found Station",
         ])
         .default(0)
         .interact()?;
@@ -178,7 +194,6 @@ fn ask_for_feedback(
     let relation = match relation_index {
         0 => LineRelation::SharesAtLeastOneLine,
         1 => LineRelation::SharesNoLines,
-        2 => return Ok(Some((LineRelation::Found, 0))),
         _ => unreachable!("Select returned an invalid index"),
     };
 
@@ -237,7 +252,6 @@ fn walk_through(tree: DecisionTree, theme: ColorfulTheme) {
         let edge = match relation {
             LineRelation::SharesAtLeastOneLine => EdgeType::SameLine(distance),
             LineRelation::SharesNoLines => EdgeType::OtherLine(distance),
-            LineRelation::Found => break,
         };
 
         cur_node = match cur_node.get_child(edge) {
